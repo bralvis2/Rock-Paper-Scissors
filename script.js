@@ -34,6 +34,7 @@ function playGame() {
     /* After the player clicks okay, the player is alerted if they won, lost, or tied */
     /* compare the player choice variable and the application choice array item to
     determine wins, losses, or ties */
+    /* Return the outcome as an alert */
     if (newPlayerChoice == appRandomChoice) {
         ties++ ;
         window.alert("It's a tie!");
@@ -48,14 +49,14 @@ function playGame() {
         losses++ ;
         window.alert("You lose!");
     }
-    /* Return the outcome as an alert */
 
     /* Then the player is alerted their statics. of wins, losses, and ties. */
-   
     /* Variables are returned in an alert */
+    window.alert("Your Stats" + "\nWins: " + wins + "\nLosses:" + losses + "\nTies:" + ties);
 
     /* After clicking okay, the player is asked if they would like to play again.
     Press Okay to play again or cancel to quit. */
+    
     // Call the function to restart the game or end the game
 
 }
